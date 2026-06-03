@@ -10,7 +10,7 @@ class Tamagochi:
         self.alive = alive
         
     
-    def action(self):
+    def game_loop(self):
         while self.alive == True:
 
             print(f"Namn: {self.name}, Ålder: {self.age}, Glädje: {self.happiness}, Hunger: {self.hunger}, Smutsighet: {self.mess}")
@@ -52,4 +52,4 @@ class Tamagochi:
 
 while True:
     pet = Tamagochi()
-    Tamagochi.action(pet)
+    pet.game_loop()
